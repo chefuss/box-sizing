@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  font-family: helvetica, sans-serif;
+  line-height: 1.6;
+  color: #555;
+}
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 30px 30px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.container h1 {
+  flex-basis: 100%;
+}
+[class^="col-"] {
+  padding-top: 30px;
+  flex-basis: 50%;
+}
+.caja, .col-2 {
+  position: relative;
+}
+.margin {
+  background-color: pink;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  width: 400px;
+  height: 200px;
+}
+.margin:after {
+  content: 'margin';
+  position: absolute;
+  top: 1%;
+  left: 2%;
+  font-family: monospace;
+  color: white;
+
+}
+.border {
+  background-color: blue;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  z-index: 1;
+  width: 370px;
+  height: 170px;
+}
+.padding {
+  background-color: green;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  width: 365px;
+  height: 165px;
+  z-index: 2;
+}
+.content {
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  font-family: monospace;
+  z-index: 3;
+}
+.message {
+  margin-top: 30px;
+  font-size: 28px;
+  font-weight: bold;
+}
+input {
+    padding: 5px 10px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #999;
+}
