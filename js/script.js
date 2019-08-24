@@ -1,11 +1,5 @@
 //obtener valores de los inputs
-var anchoValue = document.getElementById('ancho-input');
-var altoValue = document.getElementById('alto-input');
-var boxSizingValue;
-var marginValue = document.getElementById('margin-input');
-var borderValue = document.getElementById('border-input');
-var paddingValue = document.getElementById('padding-input');
-var contentValue = 0;
+var anchoValue = document.getElementById('ancho-input'), altoValue = document.getElementById('alto-input'), boxSizingValue, marginValue = document.getElementById('margin-input'), borderValue = document.getElementById('border-input'), paddingValue = document.getElementById('padding-input'), contentValue = 0;
 
 //seleccionar las cajas.
 var cajaMargin = document.querySelector('.margin');
@@ -13,6 +7,7 @@ var cajaBorder = document.querySelector('.border');
 var cajaPadding = document.querySelector('.padding');
 var cajaContent = document.querySelector('.content');
 var message = document.querySelector('.message');
+
 document.addEventListener('change', function() {
   boxSizingValue = document.querySelector('input[name="box-sizing"]:checked').value;
     if (boxSizingValue === 'content-box') {
